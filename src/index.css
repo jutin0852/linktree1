@@ -11,3 +11,138 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+*{
+  margin: 0;
+  padding: 0;
+}
+.avatar{
+  border-radius: 50% ;
+  width: 100px;
+  height: 100px;
+} 
+ a{
+  color: black;
+  text-decoration: none;
+}
+.profile{
+  width: 60%;
+  margin: 0 auto;
+  padding: 50px 0;
+  text-align: center;
+  position: relative;
+}
+.share{
+  border: 2px dashed gray; 
+  border-radius: 50%;
+  padding: 5px;
+  margin-top:3px ;
+  
+}
+.sharebtn{
+  position: absolute;
+  top: 50px;
+  right: 70px;
+  cursor: pointer;
+
+}
+.tool-tip-text{
+ background-color: grey;
+ color: white;
+ padding: 5px 15px;
+ margin-right: 20px;
+ border-radius: 5px;
+ z-index: 1;
+ position: relative;
+ 
+}
+
+.sharebtn .tool-tip-text{
+  display: inline-block;
+
+}
+.tool-tip-text::before{
+  content: "";
+  height: 12px;
+  width: 12px;
+  background-color: grey;
+  position: absolute;
+  left:83px;
+  top: 9px;
+  transform: rotate(45deg);
+  bottom: unset;
+
+}
+.content{
+  border-radius:10px ;
+  background-color: rgb(240, 240, 240);
+  padding: 30px 30px;
+  text-align: center;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.content:hover{
+  background-color: rgb(179, 177, 177);
+
+}
+.content .share{
+  float: right;
+}
+.content-container{
+  position: relative;
+  width: 60%;
+  margin: 40px auto;
+
+
+}
+.content-container .tool-tip-text {
+  font-size: 0.9em;
+  width: 200px;
+  position: absolute;
+  right: 0;
+  bottom: 100px;
+  z-index: 1;
+}
+.content-container .tool-tip-text::before{
+ top: unset;
+  bottom: -5px;
+}
+.icons{
+  margin: 0 auto 30px;
+  width: 50%;
+  text-align: center;
+}
+.icons img{
+  width: 30px;
+  cursor: pointer;
+  
+}
+footer{
+  width: 95%;
+  display: flex;
+  padding: 30px 0 70px;
+  justify-content: space-between;
+  margin: 0 auto;
+  border-top: 1px solid lightgrey;
+}
+.zuri span{
+ color: red;
+ font-size: 1.3em;
+ font-weight: bolder;
+ height: 1px;
+}
+.HNG{
+  color: grey;
+  padding: 15px 0;
+}
+@media screen and (max-width:760px) {
+  .sharebtn{
+    right: 0;
+  }
+  footer{
+    display: block;
+    text-align: center;
+  }
+  .content-container{
+    width: 80%;
+  }
+}
