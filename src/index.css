@@ -104,6 +104,7 @@ code {
 }
 .content-container .tool-tip-text::before{
  top: unset;
+ right: 120px;
   bottom: -5px;
 }
 .icons{
