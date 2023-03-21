@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
-import Profile from "./component/profile";
-import LinkTree from "./component/content";
-import Icon from "./component/icon";
-import Footer from "./component/footer";
+import Profile from "./component/Profile";
+import LinkTree from "./component/LinkTree";
+import Icon from "./component/Icon";
+import Footer from "./component/Footer";
 function App() {
   const [scrollUp, setScrollUp] = useState(false);
   useEffect(() => {
@@ -13,8 +13,11 @@ function App() {
         setScrollUp(false);
       }
     };
-    window.addEventListener("scroll" , handleScroll)
-  });
+    window.addEventListener("scroll" , handleScroll);
+
+    return () => window.removeEventListener('scroll' , handleScroll)
+    
+  },[]);
 
   return (
     <>

@@ -1,6 +1,8 @@
 import React from "react";
+
+
 export default function Footer({scrollUp}) {
-  const handleClick = () => {
+  const handleScrollup = () => {
     window.scrollTo({
       top:0,
       behavior:"smooth"
@@ -17,7 +19,7 @@ export default function Footer({scrollUp}) {
       <div>
         <img src="./IFG.svg" alt="ifg" />
       </div>
-      {scrollUp && <div onClick={handleClick} className="go-up"> <img style={{width:30}} src="https://img.icons8.com/plumpy/24/null/circled-up-2.png" alt="up"/></div>}
+      {scrollUp && <div onClick={handleScrollup} className="go-up"> <img style={{width:30}} src="https://img.icons8.com/plumpy/24/null/circled-up-2.png" alt="up"/></div>}
     </footer>
   );
 }

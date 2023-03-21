@@ -147,8 +147,8 @@ footer{
   font-size: 0.9em;
 }
 .go-up{
-  position: absolute;
-  bottom: 200px;
+  position: fixed;
+  bottom: 180px;
   right: 30px;
   cursor: pointer;
 }

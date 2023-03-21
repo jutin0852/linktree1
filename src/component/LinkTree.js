@@ -1,24 +1,37 @@
 import React, { useState } from "react";
-import { data } from "./db.js";
-import Tooltip from "./tooltip.js";
+import { data } from "../data/db.js";
+import Tooltip from "./Tooltip.js";
 
-export function Content({ contentName, description }) {
+export default function LinkTree() {
+  return (
+    <div>
+      {data.map((content) => (
+        <Content
+          key={content.id}
+          contentName={content.name}
+          description={content.description}
+        />
+      ))}
+    </div>
+  );
+}
+
+function Content({ contentName, description }) {
   const [isVisable, setIsVisable] = useState(false);
   const [isCopied, setIsCopied] = useState(false);
 
-  const handleClickCopy = () => {
+  const handleIsCopied = () => {
     setIsCopied(true);
     setTimeout(() => {
       setIsCopied(false);
     }, 1500);
   };
-  
 
-  const handleClick = async () => {
+  const handleCopyUrl = async () => {
     const url = contentName;
     try {
       await navigator.clipboard.writeText(url);
-      handleClickCopy()
+      handleIsCopied();
     } catch (error) {
       console.log(error.message);
     }
@@ -36,24 +49,10 @@ export function Content({ contentName, description }) {
           {isCopied && <div className="copied">Copied</div>}
 
           {isVisable && (
-            <i onClick={handleClick} className="fa fa-share share"></i>
+            <i onClick={handleCopyUrl} className="fa fa-share share"></i>
           )}
         </div>
       </Tooltip>
-    </div>
-  );
-}
-
-export default function LinkTree() {
-  return (
-    <div>
-      {data.map((content) => (
-        <Content
-          key={content.id}
-          contentName={content.name}
-          description={content.description}
-        />
-      ))}
     </div>
   );
 }
