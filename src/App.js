@@ -1,9 +1,21 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Profile from "./component/profile";
 import LinkTree from "./component/content";
 import Icon from "./component/icon";
 import Footer from "./component/footer";
 function App() {
+  const [scrollUp, setScrollUp] = useState(false);
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.pageYOffset > 500) {
+        setScrollUp(true);
+      } else {
+        setScrollUp(false);
+      }
+    };
+    window.addEventListener("scroll" , handleScroll)
+  });
+
   return (
     <>
       <Profile profileName="Dikonu jutin" avatar={"./avatar.jpg"} />
@@ -19,7 +31,7 @@ function App() {
           href="https://github.com/jutin0852"
         />
       </div>
-      <Footer />
+      <Footer scrollUp={scrollUp}/>
     </>
   );
 }
