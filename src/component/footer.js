@@ -12,10 +12,10 @@ export default function Footer({scrollUp}) {
     <footer>
       <div className="zuri">
         <h2>
-          Zuri <span>.</span> Internship
+          Dikonu <span>.</span> Jutin
         </h2>
       </div>
-      <div className="HNG">HNG Internship 9 Frontend Task</div>
+      <div className="HNG">My Frontend Project</div>
       <div>
         <img src="./IFG.svg" alt="ifg" />
       </div>

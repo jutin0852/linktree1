@@ -26,7 +26,9 @@ export default function Profile({ profileName, avatar }) {
       <h3>{profileName}</h3>
       <h4>
         <i className="fa fa-twitter" style={{ fontSize: 20 }}></i>{" "}
-        <a href="https://twitter.com/jutin001">@jutin001</a>
+        <a href="https://twitter.com/jutin001" target="_blank" rel="noreferrer">
+          @jutin001
+        </a>
       </h4>
       <div className="sharebtn" onClick={handleCopyUrl}>
         <Tooltip text={isCopied ? "Copied!!" : "Copy Url"}>
