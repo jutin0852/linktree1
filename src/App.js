@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
-import Profile from "./component/Profile";
-import LinkTree from "./component/LinkTree";
-import Icon from "./component/Icon";
-import Footer from "./component/Footer";
+import Profile from "./component/profile";
+import LinkTree from "./component/linkTree";
+import Icon from "./component/icon";
+import Footer from "./component/footer";
 function App() {
   const [scrollUp, setScrollUp] = useState(false);
   useEffect(() => {
