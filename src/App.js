@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import Profile from "./component/Profile";
+// import Profile from "./component/Profile";
 import LinkTree from "./component/LinkTree";
 import Icon from "./component/Icon";
 import Footer from "./component/Footer";
