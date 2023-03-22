@@ -12,7 +12,7 @@ export default function Profile({ profileName, avatar }) {
   };
 
   const handleCopyUrl = async () => {
-    const url = "https://jutins-linktree1.vercel.ap";
+    const url = "https://jutins-linktree1.vercel.app";
     try {
       await navigator.clipboard.writeText(url);
       handleIsCopied();
@@ -26,7 +26,7 @@ export default function Profile({ profileName, avatar }) {
       <h3>{profileName}</h3>
       <h4>
         <i className="fa fa-twitter" style={{ fontSize: 20 }}></i>{" "}
-        <a href="https://twitter.com/jutin001" target="_blank" rel="noreferrer">
+        <a href="https://twitter.com/jutin001">
           @jutin001
         </a>
       </h4>
