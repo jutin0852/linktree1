@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Profile from "./component/profile";
-import LinkTree from "./component/linktree";
+// import LinkTree from "./component/linktree";
 import Icon from "./component/icon";
 import Footer from "./component/footer";
 function App() {
@@ -22,7 +22,7 @@ function App() {
   return (
     <>
       <Profile profileName="Dikonu jutin" avatar={"./avatar.jpg"} />
-      <LinkTree />
+      {/* <LinkTree /> */}
       <div className="icons">
         <Icon
           icon="https://img.icons8.com/color/48/null/slack-new.png"
