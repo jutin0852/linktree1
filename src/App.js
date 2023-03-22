@@ -21,7 +21,7 @@ function App() {
 
   return (
     <>
-      <Profile profileName="Dikonu jutin" avatar={"./avatar.jpg"} />
+      {/* <Profile profileName="Dikonu jutin" avatar={"./avatar.jpg"} /> */}
       <LinkTree />
       <div className="icons">
         <Icon
