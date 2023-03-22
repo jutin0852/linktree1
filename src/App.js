@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
-// import Profile from "./component/Profile";
+import Profile from "./component/Profile";
 import LinkTree from "./component/LinkTree";
-import Icon from "./component/icon";
+import Icon from "./component/Icon";
 import Footer from "./component/Footer";
 function App() {
   const [scrollUp, setScrollUp] = useState(false);
@@ -21,7 +21,7 @@ function App() {
 
   return (
     <>
-      {/* <Profile profileName="Dikonu jutin" avatar={"./avatar.jpg"} /> */}
+      <Profile profileName="Dikonu jutin" avatar={"./avatar.jpg"} />
       <LinkTree />
       <div className="icons">
         <Icon
