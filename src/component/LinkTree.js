@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { data } from "../data/db.js";
-import Tooltip from "./toolTip.js";
+import Tooltip from "./tooltip.js";
 
 export default function LinkTree() {
   return (

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Tooltip from "./toolTip";
+import Tooltip from "./tooltip";
 
 export default function Profile({ profileName, avatar }) {
   const [isCopied, setIsCopied] = useState(false);

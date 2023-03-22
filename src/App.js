@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Profile from "./component/profile";
-import LinkTree from "./component/linkTree";
+import LinkTree from "./component/linktree";
 import Icon from "./component/icon";
 import Footer from "./component/footer";
 function App() {
